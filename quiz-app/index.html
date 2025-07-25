@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz App with GitHub Avatar</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- GitHub Username Modal -->
+  <div id="github-modal" class="modal active">
+    <div class="modal-content">
+      <h2>Enter your GitHub Username</h2>
+      <input type="text" id="github-username-input" placeholder="GitHub Username" />
+      <button id="github-submit-btn">Start Quiz</button>
+      <div id="github-error" class="error"></div>
+    </div>
+  </div>
+
+  <!-- App Header -->
+  <header>
+    <h1>Quiz App</h1>
+    <div id="avatar-container" class="avatar-box"></div>
+  </header>
+
+  <!-- Quiz Container -->
+  <main>
+    <section id="quiz-container">
+      <!-- Quiz Questions will be injected here -->
+    </section>
+  </main>
+
+  <!-- Result Modal -->
+  <div id="result-modal" class="modal">
+    <div class="modal-content">
+      <div id="result-avatar"></div>
+      <h2>Your Score</h2>
+      <p id="score"></p>
+      <button id="restart-btn">Restart Quiz</button>
+    </div>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
